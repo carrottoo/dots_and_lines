@@ -106,11 +106,7 @@ plt.figure(figsize=(10, 10), dpi=400)
 plt.imshow(norm_image2, cmap='gray')
 plt.axis('off')
 
-"""## Plot here the Dot
-
-
-
-"""
+"""## Plot here the Dot"""
 
 xs = np.linspace(0, 1, 100)[None, :]
 ys = np.linspace(0, 1, 100)[:, None]
