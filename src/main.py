@@ -7,7 +7,9 @@ from vector import TwoDimensionalVector
 from dot import Dot, DotFactory
 from line import Line, LineDrawObject, DotForceCalculator
 from dot_updater import EnvironmentDotUpdater
+import os
 
+script_dir = os.path.dirname(__file__) 
 
 def create_dots_and_lines(window: pyglet.window, line_batch: pyglet.graphics.Batch, dot_batch: pyglet.graphics.Batch):
     '''
@@ -20,8 +22,8 @@ def create_dots_and_lines(window: pyglet.window, line_batch: pyglet.graphics.Bat
         Returns a pair of lists: (dots, lines)
 
     '''
-    
-    dot_image = pyglet.image.load('../images/dot_2.png')
+
+    dot_image = pyglet.image.load(script_dir + '/../images/dot_2.png')
     # uses dot image's center as the position of the dot
     dot_image.anchor_x = dot_image.width//2
     dot_image.anchor_y = dot_image.height//2
@@ -123,7 +125,8 @@ def create_and_bind_app(window: pyglet.window):
     '''
         Creates an app and binds it to the given window
     '''
-    background = pyglet.image.load('../images/starry_sky_3.png')
+
+    background = pyglet.image.load(script_dir + '/../images/starry_sky_3.png')
     background_sprite = pyglet.sprite.Sprite(background)
     background_sprite.scale_x = 0.6
     background_sprite.scale_y = 0.6
@@ -148,7 +151,7 @@ def create_and_bind_app(window: pyglet.window):
         fps_display.draw()
 
     pyglet.clock.schedule_interval(app.update_state, 1/120)
-    
+
 
 if __name__ == '__main__':
     # Create a pyglet window 
@@ -162,12 +165,12 @@ if __name__ == '__main__':
 
     # Play background music
     player = pyglet.media.Player()
-    sound = pyglet.media.load('../music/music_fx_starry_sky_of_summer.wav')
+    sound = pyglet.media.load(script_dir + '/../music/music_fx_starry_sky_of_summer.wav')
     player.queue(sound) 
 
     # keep playing in loops as long as the app is running:
     player.loop = True
-    
+
     player.play()
     
     pyglet.app.run()
