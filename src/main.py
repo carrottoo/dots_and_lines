@@ -148,7 +148,7 @@ def create_and_bind_app(window: pyglet.window):
         fps_display.draw()
 
     pyglet.clock.schedule_interval(app.update_state, 1/120)
-
+    
 
 if __name__ == '__main__':
     # Create a pyglet window 
@@ -159,5 +159,15 @@ if __name__ == '__main__':
     
     # Create an app and bind it to the window 
     create_and_bind_app(window)
+
+    # Play background music
+    player = pyglet.media.Player()
+    sound = pyglet.media.load('../music/music_fx_starry_sky_of_summer.wav')
+    player.queue(sound) 
+
+    # keep playing in loops as long as the app is running:
+    player.loop = True
+    
+    player.play()
     
     pyglet.app.run()
