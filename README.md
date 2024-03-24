@@ -16,9 +16,11 @@ The line between two particles dims as the distance increases. Note that the dim
 
  **This program is featured with images created in Google colab with Numpy** 
 
+ Backgroud music is generated using Google generative AI tool - MusicFX
+
 ### How to run the game
 ```bash
-poetry run python main.py
+poetry run python src/main.py
 ```
 
 ### How to run the test
