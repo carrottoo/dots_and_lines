@@ -14,7 +14,7 @@ In addition, the user can click and drag mouse in the app, each click repel the 
 
 The line between two particles dims as the distance increases. Note that the dimming of the lines doesn't not reflect the strength of the force. 
 
- **This program is featured with images created in Google colab with Numpy** 
+**This program is featured with images created in Google colab with Numpy**
 
  Backgroud music is generated using Google generative AI tool - MusicFX
 
