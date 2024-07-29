@@ -24,6 +24,7 @@ Backgroud music is generated using Google generative AI tool - MusicFX.
 
 https://github.com/user-attachments/assets/587f23b0-9155-410b-9ddd-855022649e7a
 
+## Try locally 
 
 ### How to run the game
 ```bash
@@ -35,4 +36,8 @@ poetry run python src/main.py
 poetry run pytest
 ```
 
+## Examples
+#### Game window
 ![Example Image](./images/window.png)
+
+For demo of higher resolution, [click here to download](https://github.com/carrottoo/dots_and_lines/blob/main/media/demo.mp4).
