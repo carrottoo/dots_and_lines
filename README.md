@@ -20,6 +20,11 @@ The line between two particles dims as the distance increases. Note that the dim
 
 Backgroud music is generated using Google generative AI tool - MusicFX.
 
+## Demo
+
+https://github.com/user-attachments/assets/587f23b0-9155-410b-9ddd-855022649e7a
+
+
 ### How to run the game
 ```bash
 poetry run python src/main.py
