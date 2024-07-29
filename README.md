@@ -40,4 +40,4 @@ poetry run pytest
 #### Game window
 ![Example Image](./images/window.png)
 
-For demo of higher resolution, [click here to download](https://github.com/carrottoo/dots_and_lines/blob/main/media/demo.mp4).
+For demo of higher resolution, [click here to download](https://github.com/carrottoo/dots_and_lines/blob/main/media/demo.mov).
